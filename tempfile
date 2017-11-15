@@ -1,0 +1,42 @@
+d-i	netcfg/enable	boolean	true
+d-i	netcfg/disable_dhcp	boolean	false
+d-i	netcfg/get_gateway	string	
+d-i	netcfg/confirm_static	boolean	true
+d-i	netcfg/get_netmask	string	
+d-i	netcfg/get_nameservers	string	
+d-i	netcfg/dhcp_hostname	string	
+d-i	netcfg/wireless_essid	string	
+d-i	netcfg/use_autoconfig	boolean	true
+d-i	netcfg/choose_interface	select	
+d-i	netcfg/no_ipv6_pointopoint	error	
+d-i	netcfg/invalid_essid	error	
+d-i	netcfg/dhcpv6_timeout	string	15
+d-i	netcfg/wireless_wpa	string	
+d-i	netcfg/wpa_supplicant_failed	note	
+d-i	netcfg/invalid_wep	error	
+d-i	netcfg/get_ipaddress	string	
+d-i	netcfg/no_dhcp_client	error	
+d-i	netcfg/dhcp_timeout	string	25
+d-i	netcfg/disable_autoconfig	boolean	false
+d-i	netcfg/target_network_config	select	ifupdown
+d-i	netcfg/dhcp_options	select	Configure network manually
+d-i	netcfg/wireless_adhoc_managed	select	Infrastructure (Managed) network
+d-i	netcfg/wireless_essid_again	string	
+d-i	netcfg/get_domain	string	
+d-i	netcfg/invalid_hostname	error	
+d-i	netcfg/kill_switch_enabled	note	
+d-i	netcfg/link_wait_timeout	string	3
+d-i	netcfg/invalid_pass	error	
+d-i	netcfg/get_hostname	string	vinge
+d-i	netcfg/get_pointopoint	string	
+d-i	netcfg/gateway_unreachable	error	
+d-i	netcfg/wireless_wep	string	
+d-i	netcfg/no_default_route	boolean	
+d-i	netcfg/no_interfaces	error	
+d-i	netcfg/wireless_security_type	select	
+d-i	netcfg/hostname	string	
+d-i	netcfg/bad_link_wait_timeout	error	
+d-i	netcfg/wireless_show_essids	select	
+d-i	netcfg/dhcp_failed	note	
+d-i	netcfg/error	error	
+d-i	netcfg/bad_ipaddress	error	

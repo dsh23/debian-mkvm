@@ -1,0 +1,20 @@
+d-i	mirror/http/mirror	select	ftp.iinet.net.au
+d-i	mirror/ftp/directory	string	/debian/
+d-i	mirror/http/proxy	string	
+apt-mirror-setup	apt-setup/contrib	boolean	true
+d-i	mirror/noarch	error	
+apt-mirror-setup	apt-setup/no_mirror	boolean	false
+apt-mirror-setup	apt-setup/non-free	boolean	true
+d-i	mirror/http/directory	string	/debian/debian/
+d-i	mirror/ftp/proxy	string	
+d-i	mirror/country	string	AU
+d-i	mirror/codename	string	jessie
+d-i	mirror/no-default	boolean	true
+d-i	mirror/protocol	select	http
+d-i	mirror/http/hostname	string	ftp.iinet.net.au
+d-i	mirror/ftp/hostname	string	mirror
+d-i	mirror/http/countries	select	AU
+apt-mirror-setup	apt-setup/mirror/error	select	Change mirror
+apt-mirror-setup	apt-setup/use_mirror	boolean	
+d-i	mirror/bad	error	
+d-i	mirror/suite	select	testing
